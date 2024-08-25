@@ -33,8 +33,9 @@
     </style>
 </head>
 
-<body class="w-11/12 mx-auto">
-    <header class="mb-24">
+<body>
+    <header class="w-11/12 mx-auto mb-24">
+        <!--Menu-->
         <div class="navbar bg-base-100">
             <div class="navbar-start">
                 <div class="dropdown">
@@ -67,6 +68,7 @@
                 <a class="btn bg-[#1DD1001A] text-[#1DD100]">Bus <i class="fa-solid fa-bus"></i></a>
             </div>
         </div>
+        <!--Banner Section-->
         <div class="bg-image flex items-center justify-center">
             <div class="text-center space-y-4 py-36">
                 <h1 class="font-raleway text-6xl font-extrabold text-white">End-To-End travel with <br> <span
@@ -106,27 +108,27 @@
         </div>
 
     </header>
-    <main>
+    <main class="w-11/12 mx-auto mb-16">
         <h1 class="text-center text-[#030712] font-bold font-raleway text-4xl mb-5">Best offers for you</h1>
-        <div class="flex justify-between mb-10">
-            <div class="bg-[#FFBF0F] rounded-xl flex gap-5">
-                <div class="px-7 py-4 font-inter border-r-2 border-r-white border-dashed">
+        <div class="grid grid-cols-2 gap-36 mb-10">
+            <div class="bg-[#FFBF0F] rounded-xl grid grid-cols-5">
+                <div class="px-7 py-4 font-inter border-r-2 border-r-white border-dashed col-span-3 text-center">
                     <h3 class="text-4xl text-[#030712] opacity-80 font-bold">15% OFF</h3>
                     <p class="text-[#030712] opacity-80 text-xl font-semibold">on your next purchase</p>
                     <p class="text-[#030712] opacity-50 text-lg font-semibold">use by January 2024</p>
                 </div>
-                <div class="px-7 py-8">
+                <div class="col-span-2 py-7 mx-auto">
                     <h2 class="font-raleway text-[#030712] text-3xl font-bold mb-1">NEW15</h2>
                     <p class="font-raleway text-[#030712] opacity-40 text-xl font-medium">Coupon Code</p>
                 </div>
             </div>
-            <div class="bg-[#F78C9C] rounded-xl flex gap-5">
-                <div class="px-7 py-4 font-inter border-r-2 border-r-white border-dashed">
+            <div class="bg-[#F78C9C] rounded-xl grid grid-cols-5">
+                <div class="px-7 py-6 font-inter border-r-2 border-r-white border-dashed col-span-3 text-center">
                     <h3 class="text-4xl text-[#030712] opacity-80 font-bold">20% OFF</h3>
                     <p class="text-[#030712] opacity-80 text-xl font-semibold">on your next purchase</p>
                     <p class="text-[#030712] opacity-50 text-lg font-semibold">use by January 2024</p>
                 </div>
-                <div class="px-7 py-8">
+                <div class="py-6 px-7 col-span-2 mx-auto">
                     <h2 class="font-raleway text-[#030712] text-3xl font-bold mb-1">Couple20</h2>
                     <p class="font-raleway text-[#030712] opacity-40 text-xl font-medium">Coupon Code</p>
                 </div>
@@ -193,7 +195,7 @@
                 </div>
             </div>
         </section>
-        <section class="grid grid-cols-5 gap-8">
+        <section class="grid grid-cols-5 gap-8 divide-x-2 divide-gray-300 divide-dashed">
             <div class="col-span-3">
                 <h1
                     class="font-raleway text-2xl text-[#030712] font-semibold py-4 border-b-2 border-b-gray-300 border-dashed">
@@ -205,7 +207,7 @@
                             src="images/seat-green-filled.png" alt=""> Selected</p>
                 </div>
                 <div class="flex justify-end py-4">
-                    <button class="px-5 py-2 bg-slate-100 rounded-lg"><img src="images/steering-wheel.png"
+                    <button class="px-10 py-3 bg-slate-100 rounded-lg"><img src="images/steering-wheel.png"
                             alt=""></button>
                 </div>
                 <div class="grid grid-cols-2 gap-16 font-inter text-[#03071280] text-lg font-medium">
@@ -305,11 +307,81 @@
                     </div>
                 </div>
             </div>
-            <div class="col-span-2">
-                <h1>Select Your Seat</h1>
+            <div class="col-span-2 ps-5 pt-5">
+                <h1
+                    class="font-raleway text-[#030712] font-semibold text-2xl pb-4 border-b-2 border-b-gray-300 border-dashed mb-6">
+                    Select Your Seat</h1>
+                <div class="bg-[#F7F8F8] px-3 py-4 rounded-xl">
+                    <div
+                        class="flex justify-between font-inter font-medium text-[#030712] pb-2 border-b-2 border-b-gray-300 border-dashed mb-2">
+                        <div class="indicator">
+                            <span class="indicator-item indicator-middle badge badge-accent text-white">0</span>
+                            <div class="grid place-items-center w-16">Seat</div>
+                        </div>
+                        <p>Class</p>
+                        <p>Price</p>
+                    </div>
+                    <div
+                        class="flex justify-between ps-8 font-inter text-[#03071299] pb-3 border-b-2 border-b-gray-300 border-solid mb-2">
+                        <ul class="space-y-2">
+                            <li>0</li>
+                        </ul>
+                        <ul class="text-center space-y-2">
+                            <li>Economy</li>
+                        </ul>
+                        <ul class="text-center space-y-2">
+                            <li>550</li>
+                        </ul>
+                    </div>
+                    <div class="flex justify-between mb-3 font-inter font-medium text-[#030712]">
+                        <p>Total Price</p>
+                        <p>BDT <span>0</span></p>
+                    </div>
+                    <div class="mb-3">
+                        <label class="input input-bordered flex items-center gap-2">
+                            <input type="text" class="grow" placeholder="Have any coupon?" />
+                            <button
+                                class="bg-[#1DD100] text-white font-inter font-semibold px-4 py-2 rounded-lg">Apply</button>
+                        </label>
+                    </div>
+                    <div class="flex justify-between text-[#030712] font-inter font-medium">
+                        <h2>Grand Total</h2>
+                        <h3>BDT 0</h3>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
+
+    <footer class="bg-black">
+        <div class="w-11/12 mx-auto">
+            <div class="flex justify-between pt-12 pb-8 border-dashed border-b-2 border-[#FFFFFF4D]">
+                <div class="space-y-3">
+                    <h1 class="font-raleway text-white text-4xl font-extrabold">Dipjol Paribahan</h1>
+                    <p class="font-inter text-white text-lg">Dipjol Paribahan is digitalized to make your <br> ticket
+                        easier for you.</p>
+                </div>
+                <div class="space-y-3">
+                    <p class="font-raleway text-white text-xl font-semibold">Download our app</p>
+                    <div class="flex border border-white p-2">
+                        <img class="block" src="images/playstore.png" alt="">
+                        <div class="font-raleway text-white">
+                            <p class="text-xs">GET IT ON</p>
+                            <P class="font-bold">Google Play</P>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-between pt-8 pb-12">
+                <p class="font-inter text-[#FFFFFFB3]">All rights reserved &copy;Dipjol paribahan</p>
+                <div class="flex gap-4 font-inter text-white">
+                    <p>Terms & conditions</p>
+                    <p>Return & refund policy</p>
+                    <p>Privacy policy</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
