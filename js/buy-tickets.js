@@ -34,9 +34,34 @@ document.getElementById("seat-select-container").addEventListener('click', funct
     document.getElementById("number-input").addEventListener('keyup', function () {
         removeDisable("submit-btn");
     })
-    if (seatCount === 3) {
+    if (seatCount >= 3) {
         removeDisable("discount-coupon-field");
 
-    }
+        document.getElementById("discount-coupon-field").addEventListener('keyup', function () {
+            const discount15Field = document.getElementById("discount15");
+            const discount15 = discount15Field.innerText;
+            const discount20Field = document.getElementById("discount20");
+            const discount20 = discount20Field.innerText;
+            const couponInputField = document.getElementById("discount-coupon-field");
+            const discountCoupon = couponInputField.value;
+            if (discountCoupon === discount15 || discountCoupon === discount20) {
+                removeDisable("coupon-apply-btn");
+                document.getElementById("discount-coupon-field").disabled = true;
+                const discountField = document.getElementById("discount");
+                document.getElementById("coupon-apply-btn").addEventListener("click", function () {
+                    if (discountCoupon === discount15) {
+                        const totalDiscount = totalPrice * .15;
+                        discountField.innerText = totalDiscount;
+                        grandTotalField.innerText = totalPrice - totalDiscount;
+                    }
+                    else {
+                        const totalDiscount = totalPrice * .20;
+                        discountField.innerText = totalDiscount;
+                        grandTotalField.innerText = totalPrice - totalDiscount;
+                    }
+                });
 
+            }
+        });
+    }
 });
