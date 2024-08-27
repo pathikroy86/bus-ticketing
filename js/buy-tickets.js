@@ -63,5 +63,6 @@ document.getElementById("seat-select-container").addEventListener('click', funct
 
             }
         });
+        document.getElementById("seat-select-container").classList.add("hidden");
     }
 });
