@@ -168,8 +168,8 @@
                             </div>
                             <button class="btn bg-green-200 hover:bg-green-200 border-none">
                                 <img src="images/seat-green.png" alt="">
-                                <div class="badge bg-green-200 text-green-500 border-0"><span
-                                        id="seats-left">40</span>Seats left</div>
+                                <div class="badge bg-green-200 text-green-500 border-0"><span id="seats-left">40 </span>
+                                    Seats left</div>
                             </button>
                         </div>
                         <div class="bg-[#F7F8F8] divide-y divide-dashed mb-5 rounded-xl p-5">
@@ -386,9 +386,29 @@
                         <input
                             class="font-inter text-[#03071266] w-full py-1 px-4 border-solid border-2 border-[#0307121A] rounded-md"
                             type="email" name="" id="email-input" placeholder="Enter your email id" disabled>
+                        <!-- Open the modal using ID.showModal() method -->
                         <button
-                            class="block bg-[#1DD100] w-full py-2 rounded-2xl font-raleway text-white font-extrabold text-xl"
-                            id="submit-btn" disabled>Next</button>
+                            class="btn block bg-[#1DD100] w-full py-2 rounded-xl font-raleway text-white font-extrabold text-xl"
+                            onclick="my_modal_1.showModal()" id="submit-btn" disabled>Next</button>
+                        <dialog id="my_modal_1" class="modal">
+                            <div class="bg-white px-32 py-16 rounded-md text-center flex flex-col justify-center">
+                                <img class="w-1/4 mx-auto" src="images/success.png" alt="">
+                                <h3 class="text-2xl font-bold text-[#27AE60] font-raleway">Success</h3>
+                                <p class="py-4 font-inter font-medium text-[#4A4A4A] text-xl">Thank you for booking our
+                                    Bus Seats. <br> We are working hard to find
+                                    the best service and deals for you.</p>
+                                <p class="font-inter font-light text-[#4A4A4A] text-xl">Shortly you will find a
+                                    confirmation in your mail.</p>
+                                <div class="modal-action flex justify-center">
+                                    <form method="dialog">
+                                        <!-- if there is a button in form, it will close the modal -->
+                                        <button
+                                            class="font-raleway text-white font-semibold text-xl bg-[#27AE60] px-16 py-3 rounded-3xl">Continue</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </dialog>
+
                     </div>
                 </div>
             </section>
